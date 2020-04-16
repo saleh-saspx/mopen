@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function () {
+    return redirect()->route('coupon.index');
+})->name('home');
 Route::post('/home', 'HomeController@like')->name('like');
 Route::resource('/home/coupon', 'CouponController');
 Route::get('/home/coupon/create/upload', 'CouponController@upload')->name('listUploadPage');
