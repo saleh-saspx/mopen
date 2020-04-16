@@ -10,7 +10,7 @@
                         <div class="float-left">
                             <a class="btn btn-sm btn-dark" target="_blank" href="{{ route('coupon.create') }}">ایجاد
                                 کوپن</a>
-                                <a class="btn btn-sm btn-dark" target="_blank" href="{{ route('coupon.create') }}"> ایجاد
+                                <a class="btn btn-sm btn-dark" target="_blank" href="{{ route('listUploadPage') }}"> ایجاد
                                 گروهی کوپن</a>
                         </div>
                     </div>
